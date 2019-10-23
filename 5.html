@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nomer 1</title>
+</head>
+<body>
+
+
+
+
+
+<script>
+
+let mas = prompt("Введите массив")
+let mas1 = mas.split(' ');
+let i=0;
+
+
+let div = document.createElement('div');
+div.id="1";
+document.body.append(div);
+for(let i = 0; i<mas1.length;i++)
+{
+	let p = document.createElement('p');
+	p.innerHTML=mas1[i];
+ document.getElementById('1').append(p);
+}
+</script>
+</body>
+</html>

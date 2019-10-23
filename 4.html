@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nomer 1</title>
+</head>
+<body>
+
+
+
+<div>
+<input id="1" type="button" value="+" onclick="Dob()" class="startBtn">
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+</ul>
+</div>
+
+
+<script>
+
+let mas = prompt("Введите массив")
+let mas1 = mas.split(' ');
+let i=0;
+function Dob() {
+{
+	let input = document.createElement('li');
+input.innerHTML=mas1[i];
+document.body.append(input);
+document.querySelector('ul > li:last-child').append(input);
+i++;
+}
+}
+
+</script>
+</body>
+</html>
