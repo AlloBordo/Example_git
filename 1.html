@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nomer 1</title>
+</head>
+<body>
+
+<style>
+div, input { width: 300px; margin-bottom: 10px; text-align: center; }
+</style>
+
+<div>
+<input id="1" type="button" value="+" onclick="Dob()" class="startBtn">
+
+</div>
+<hr>
+
+
+<script>
+
+
+function Dob() {
+
+
+
+let input = document.createElement('input');
+input.type="text";
+document.body.append(input);
+document.getElementById('1').after(input);
+}
+</script>
+</body>
+</html>
